@@ -49,7 +49,7 @@
   */
 void sys_jtag_off(void)
 {
-	Pinmux_Swdoff();
+	// Pinmux_Swdoff();
 }
 
 /**

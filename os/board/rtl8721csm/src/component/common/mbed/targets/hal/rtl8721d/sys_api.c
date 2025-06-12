@@ -48,7 +48,7 @@ void rtc_backup_timeinfo(void);
   */
 void sys_jtag_off(void)
 {
-	Pinmux_Swdoff();
+	// Pinmux_Swdoff();
 }
 
 /**

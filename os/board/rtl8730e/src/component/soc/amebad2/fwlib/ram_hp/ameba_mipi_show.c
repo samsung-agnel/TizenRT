@@ -221,7 +221,7 @@ void Mipi_LCM_Set_Reset_Pin(u8 Newstatus)
 {
 	u32 pin_name = _PA_14;
 
-	Pinmux_Swdoff();
+	// Pinmux_Swdoff();
 	Pinmux_Config(pin_name, PINMUX_FUNCTION_GPIO);
 
 	GPIO_InitTypeDef ResetPin;

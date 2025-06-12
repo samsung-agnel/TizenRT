@@ -145,7 +145,7 @@ void pwmout_init(pwmout_t *obj, PinName pin)
 	RTIM_CCxCmd(PWM_TIM, pwm_chan, TIM_CCx_Enable);
 
 	if (_PA_13 == pin || _PA_14 == pin) {
-		Pinmux_Swdoff();
+		// Pinmux_Swdoff();
 	}
 	Pinmux_Config(pin, PINMUX_FUNCTION_PWM);
 	km4_ch_start[pwm_chan] = 1;

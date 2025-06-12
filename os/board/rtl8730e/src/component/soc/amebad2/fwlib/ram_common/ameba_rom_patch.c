@@ -139,7 +139,7 @@ void Pinmux_Config(u8 PinName, u32 PinFunc)
 		}
 
 	} else if ((PinName == SWD_DATA) || ((PinName == SWD_CLK))) {
-		Pinmux_Swdoff();
+		// Pinmux_Swdoff();
 		//RTK_LOGW(TAG, "SWD PAD P%s_%d is configured to funcID %lu \n", PORT_NUM(PinName) ? "B" : "A", PIN_NUM(PinName), PinFunc);
 	}
 
